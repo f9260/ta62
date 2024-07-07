@@ -1,0 +1,43 @@
+import Image from 'next/image'
+import sure1 from 'app-images/sure1.jpg'
+import sure2 from 'app-images/sure2.jpg'
+import sure3 from 'app-images/sure3.jpg'
+import sure4 from 'app-images/sure4.jpg'
+
+
+
+# Durations
+
+The Viral feature has two modes. Regular and Random.
+
+
+## Regular
+
+- In regular mode, the times should only show the relevant durations.
+
+<Image src={sure1} />
+
+- The duration should not be less than the total number of scenes in the audio file.
+
+- If only seconds are to be entered, no data other than seconds should be added.
+
+<Image src={sure2} />
+
+
+## Random
+
+- Time intervals are entered when random mode is active.
+
+<Image src={sure3} />
+
+- The time intervals entered are in minutes and hours only.
+
+<Image src={sure4} />
+
+
+
+import { Callout } from 'nextra/components'
+ 
+<Callout emoji="💡">
+  You can review the video tutorials about the durations in [Viral > Mods](viralmods#-tutorials).
+</Callout>

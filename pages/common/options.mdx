@@ -1,0 +1,43 @@
+import Image from 'next/image'
+import videobirlestir from 'images/mergedvideo.png'
+import gorselekle from 'images/addimage.png'
+import gorselekletransparan from 'images/addimagetransparent.png'
+import logoekle from 'images/addlogo.png'
+import sesekle from 'images/addsound.png'
+import introoutroekle from 'images/addintrooutro.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+
+# Options
+
+There are numerous options available to personalize your work and create different designs.
+
+
+
+  <Cards >
+              <Card title="Merge Video" image href="/common/options/merge-video">
+                        <Image src={videobirlestir} />
+              </Card>
+              <Card title="Add Image" image href="/common/options/add-image">
+                        <Image src={gorselekle} />
+              </Card>
+              <Card title="Add Image(T)" image href="/common/options/add-image-t">
+                        <Image src={gorselekletransparan} />
+              </Card>
+
+            </Cards>
+
+
+            
+  <Cards >
+              <Card title="Add Logo" image href="/common/options/add-logo">
+                        <Image src={logoekle} />
+              </Card>
+              <Card title="Add Sound" image href="/common/options/add-sound">
+                        <Image src={sesekle} />
+              </Card>
+              <Card title="Add Intro/Outro" image href="/common/options/add-intro-outro">
+                        <Image src={introoutroekle} />
+              </Card>
+
+            </Cards>

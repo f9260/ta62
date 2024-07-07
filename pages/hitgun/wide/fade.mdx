@@ -1,0 +1,116 @@
+# Fade
+
+The Fade feature allows you to add a fading effect at the beginning and end of your videos.
+
+For example, with a fade set to 3 seconds for the beginning, the video image starts out dark and brightens at 3 seconds.
+
+If you set 3 seconds for the end of the video, the image will gradually fade to black 3 seconds before the end of the video.
+
+import Link from 'next/link';
+
+<Link href={`/hitgun/wide/fade#-tutorial`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial  
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Fade Settings
+
+Fade settings are made with the " - " symbol.
+
+At least 2 values must be entered.
+
+A value of 0 ensures that no operation is performed.
+
+For example, if you want to set a fade of 4 seconds only for `start of video`;
+
+**4-0**
+
+value must be entered.
+
+If you only want to add a 3 second fade setting to the `end of video`;
+
+**0-3**
+
+value must be entered.
+
+If you want to set the fade both at the beginning and end of the video;
+
+**4-3**
+
+You can enter the desired values such as.
+
+
+
+#### Intro/Outro Fade
+
+Fade settings can also be applied for Intro and Outro. 
+
+#### Intro Fade
+
+
+When you want to set the fade for Intro only, the fade setting is applied to the end of your intro.
+
+For example, if you want to set a fade of 3 seconds;
+
+**4-3-3**
+
+value is enough. So the value at the end determines your intro fade value.
+
+
+
+#### Outro Fade
+
+
+When you apply a fade setting for your outro, the fade is set to the beginning of the outro.
+
+**4-3-3-4**
+
+When you make a setting like this, the 4 at the end allows the fade feature to be applied to the first 4 seconds of your outro.
+
+
+You should add a value of 0 to the moments you do not want to apply fade.
+
+For example, if you want to set the fade for the outro only;
+
+
+**0-0-0-4**
+
+You must enter a value in the form.
+
+
+**3-2-0-2**
+
+fade setting is applied to the beginning and end of your video, but not to the intro. Then a 2-second fade setting is applied for Outro.
+
+Translated with DeepL.com (free version)
+
+## 📺 Tutorial
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/yatay-fade.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+

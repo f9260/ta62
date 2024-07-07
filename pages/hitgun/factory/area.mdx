@@ -1,0 +1,36 @@
+import Image from 'next/image'
+import varsayilan from 'images/default.png'
+import ozel from 'images/custom.png'
+import gelismis from 'images/advanced.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Area
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/fabrika-alan.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+The Hit Gun system always creates "vertical" videos when the **Wide** option is not active.
+
+The area section is where these vertical videos can be customized.
+
+It has three separate options: **Default**, **Custom**, and **Advanced**.
+
+
+
+
+
+  <Cards >
+              <Card title="Default" image href="area/default">
+                        <Image src={varsayilan} />
+              </Card>
+              <Card title="Custom" image href="area/custom">
+                        <Image src={ozel} />
+              </Card>
+              <Card title="Advanced" image href="area/advanced">
+                        <Image src={gelismis} />
+              </Card>
+
+            </Cards>
+

@@ -1,0 +1,37 @@
+import Image from 'next/image'
+import stable from 'images/stable.png'
+import range from 'images/range.png'
+import random from 'images/random.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Method
+
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/fabrika-metot.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+The video generation method is determined in this area.
+
+There are three separate options: **Random**, **Minute**, and **Interval**.
+
+The selected option allows for duration settings to be made based on the target videos.
+
+It is one of the fundamental structures of the Hit Gun system. Works are built on this structure.
+
+
+
+  <Cards >
+              <Card title="Rastgele" image href="/hitgun/fabrika/metot/rastgele">
+                        <Image src={random} />
+              </Card>
+              <Card title="Dakika" image href="/hitgun/fabrika/metot/dakika">
+                        <Image src={stable} />
+              </Card>
+              <Card title="Aralık" image href="/hitgun/fabrika/metot/aralik">
+                        <Image src={range} />
+              </Card>
+
+            </Cards>

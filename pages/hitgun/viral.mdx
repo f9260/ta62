@@ -1,0 +1,58 @@
+import Image from 'next/image'
+import sesler from 'images/sesler.png'
+import customses from 'images/customses.png'
+import sureler from 'images/sureler.png'
+import viralmod from 'images/viralmod.png'
+import fullscreen from 'images/fullscreen.png'
+import { Card, Cards } from 'nextra-theme-docs'
+import { Callout } from 'nextra/components'
+
+
+
+# Viral
+
+It is one of the most effective features of the Hit Gun system.
+
+It allows you to produce interesting content with the audio file you want.
+
+You can also produce similar videos by defining video.
+
+
+
+
+<Callout type="info" emoji="ℹ️">
+ Other features are currently disabled while Viral is active. 
+</Callout>
+ 
+
+
+  <Cards num={2}>
+
+             <Card title="Viral Mods" image href="/hitgun/viral/viralmods">
+                        <Image src={viralmod} /> 
+             
+              </Card>
+
+            <Card title="Sounds" image href="/hitgun/viral/sounds">
+                        <Image src={sesler} />
+              </Card>
+
+            </Cards>
+
+  <Cards num={3}>
+
+             <Card title="Durations" image href="/hitgun/viral/durations">
+                        <Image src={sureler} /> 
+             
+              </Card>
+
+            <Card title="Custom Sound" image href="/hitgun/viral/custom-sound">
+                        <Image src={customses} />
+              </Card>
+
+            <Card title="Fullscreen" image href="/hitgun/viral/fullscreen">
+                        <Image src={fullscreen} />
+              </Card>
+
+            </Cards>    
+

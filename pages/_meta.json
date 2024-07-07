@@ -1,0 +1,42 @@
+{
+  "index": "Introduction",
+  "hitgun": "Hit Gun",
+  "boost":"Boost",
+  "multi":"Multi",
+  "single":"Single",
+  "common":"Common",
+  "tutorials":"Tutorials",
+  "limitations":"Limitations",
+  "ve3plus-helper":"VE3.Plus-Helper",
+ 
+  "ve3plus": {
+    "title": "VE3.Plus",
+    "type": "page",
+    "href": "https://ve3.plus/"
+  },
+ 
+  "forum": {
+    "title": "Forum ↗",
+    "type": "page",
+    "href": "https://forum.ve3.plus/",
+    "newWindow": true
+  },
+  "feedback": {
+    "title": "Feedback ↗",
+    "type": "page",
+    "href": "https://forum.ve3.plus/t/feedback",
+    "newWindow": true
+  },
+  "demo": {
+    "title": "Demo ↗",
+    "type": "page",
+    "href": "https://forum.ve3.plus/d/3-demo-request",
+    "newWindow": true
+  },
+  "tr": {
+    "title": "TR",
+    "type": "page",
+    "href": "https://rehber.ve3.plus/",
+    "newWindow": false
+  }
+}

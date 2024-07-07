@@ -1,0 +1,168 @@
+import { Steps } from 'nextra/components'
+import bot1 from 'app-images/bot1.jpg'
+import bot2 from 'app-images/bot2.jpg'
+import bot3 from 'app-images/bot3.jpg'
+import bot4 from 'app-images/bot4.jpg'
+import bot5 from 'app-images/bot5.jpg'
+import bot6 from 'app-images/bot6.jpg'
+import bot7 from 'app-images/bot7.jpg'
+import bot8 from 'app-images/bot8.jpg'
+import bot9 from 'app-images/bot9.jpg'
+import bot10 from 'app-images/bot10.jpg'
+import bot11 from 'app-images/bot11.jpg'
+import Link from 'next/link'
+import Image from 'next/image'
+
+
+
+
+
+# Notification
+
+<Image src={bot11} />
+
+You can follow the videos created using the notification feature via Telegram.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="warning" emoji="⚠️">
+  Due to Telegram API limits, notifications are sent at 15 minutes intervals. 
+</Callout>
+
+
+ 
+<Callout type="info" emoji="ℹ️">
+  Instant notification is sent when the work is complete.
+</Callout>
+
+<Callout type="error" emoji="️🚫">
+  Currently disabled in **Viral** and **Wide > Clip** mode.
+</Callout>
+
+## Activate Telegram Notifications
+
+<Steps>
+### Login to Telegram Account
+
+Log in to your Telegram account via your desktop app or phone.
+
+### Activating the BotFather Bot
+
+Type BotFather in the search field and log in to the **"blue-ticked (approved)"** bot profile.
+
+
+<Image src={bot1} />
+
+After logging in to the bot account, press the **Start** button below on the screen that appears.
+
+<Image src={bot2} />
+
+
+### Create a New Bot
+
+After pressing the start button, run **/newbot**.
+
+<Image src={bot3} />
+
+
+### Entering Bot Information
+
+Now we need a name for our bot and a username ending with **bot**.
+
+Let's first name our bot and then define our username.
+
+<Callout type="info" emoji="ℹ️">
+  The **dot (.)** cannot be used when defining a username ending with bot.
+</Callout>
+     
+
+
+<Image src={bot4} />
+
+
+### Launch Your Bot
+
+After entering the user information, information such as token and bot login link is sent to us by the bot.
+
+In order to move on to the new steps, let's start the bot account sent to us by clicking on the bot link shown with **red arrow**.
+
+
+<Image src={bot5} />
+
+
+Our bot can now be activated. Let's activate our bot with the **Start** button.
+
+<Image src={bot6} />
+
+
+### Getting Token and Chat ID Information
+
+After activating our bot, we can move on to the token processes.
+
+We copy the token information given to us by clicking on it
+
+<Image src={bot7} />
+
+
+Let's paste it into the section that says < TOKEN > in the link below.
+
+
+```ansi
+https://api.telegram.org/bot< TOKEN >/getUpdates
+```
+
+After this process, we will have a url like this.
+
+```ansi
+https://api.telegram.org/bot7078338560:AAFaCK9F.....fKv1SK2Xf_qFzoLhSg1M/getUpdates
+```
+
+When you access the link, you will see such a page.
+
+<Image src={bot8} />
+
+
+<Callout type="warning" emoji="⚠️">
+  If only the " ok: true, result[] " text appears, trigger the bot by sending any text to your Telegram bot you created and then refresh the link page.
+</Callout>
+
+
+### Token and Chat ID Integration
+
+We obtained our token information from the bot, now we can get the Chat ID from the link page above and integrate it into our system.
+
+The values expressed with "**id:**" indicate our Chat ID.
+
+In our example, our Chat ID is **`id:`6126....88**.
+
+<Image src={bot9} />
+
+
+Now we can integrate all this information into our VE3.Plus system.
+
+- **Bot Token** : 7078338560:AAFaCK9F....fKv1SK2Xf_qFzoLhSg1M
+- **Chat ID** : 6126....88
+
+<Image src={bot10} />
+
+**That's all...**
+
+
+### Conclusion
+
+Now, when you start your work, if the content production process is longer than 15 minutes, you will receive information about the progress every 15 minutes.
+
+For example, you wanted to produce 100 videos with the **Boost** feature, and the 34th video is produced in the 15th minute.
+
+The text "34th video is being processed..." reflected in the logs will also be displayed on your account as a notification from Telegram.
+
+In this way, you will be able to easily follow the progress of your work when you are not in front of the computer.
+
+Additional notification will be sent as soon as the work is completed.
+
+
+
+
+</Steps>
+
+

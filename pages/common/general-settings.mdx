@@ -1,0 +1,62 @@
+import Image from 'next/image'
+import zoom from 'images/zoom.png'
+import kirp from 'images/crop.png'
+import dondur from 'images/rotate.png'
+import hizlandir from 'images/speedup.png'
+import ayna from 'images/mirror.png'
+import rounded from 'images/roundedcorners.png'
+import yazi from 'images/text.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+
+# General Settings
+
+Zoom, mirror, rotate, etc. regarding the system. This is the area where you can apply the settings.
+
+  <Cards >
+              <Card title="Zoom" image href="/common/general-settings/zoom">
+                        <Image src={zoom} />
+              </Card>
+              <Card title="Crop" image href="/common/general-settings/crop">
+                        <Image src={kirp} />
+              </Card>
+              <Card title="Rotate" image href="/common/general-settings/rotate">
+                        <Image src={dondur} />
+              </Card>
+
+            </Cards>
+
+
+            
+  <Cards >
+              <Card title="Speed Up" image href="/common/general-settings/speedup">
+                        <Image src={hizlandir} />
+              </Card>
+              <Card title="Mirror" image href="/common/general-settings/mirror">
+                        <Image src={ayna} />
+              </Card>
+              <Card title="Rounded Corners" image href="/common/general-settings/rounded-corners">
+                        <Image src={rounded} />
+              </Card>
+
+            </Cards>
+
+
+<div className="container3">
+
+            <Cards>
+              <Card title="Text" image href="/common/general-settings/text">
+                        <Image src={yazi} />
+              </Card>
+            </Cards>
+      <style jsx>{`
+        .container3 {
+          display:flex;
+          justify-content:center;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
+</div>
+

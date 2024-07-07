@@ -1,0 +1,106 @@
+import { Callout } from 'nextra/components'
+import Image from 'next/image'
+import hitgun from 'images/hitgun.png'
+import boost from 'images/boost.png'
+import multi from 'images/multi.png'
+import single from 'images/single.png'
+import common from 'images/common.png'
+import indextest from 'app-images/test.jpg'
+import { Card, Cards } from 'nextra-theme-docs'
+
+
+# Introduction
+
+<Callout type="default" emoji="">
+  **Time is precious. It is also capital itself.**
+</Callout> 
+
+
+If we create a system that will **do for us** what we spend **three hours a day** doing, 
+then **every three days** we gain a **new day** to focus on other things.
+
+
+
+## VE3.Plus
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/introduction.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+**VE3.Plus** is an advanced and unrivaled **video editing automation** that aims to save you **days and months**. 
+It allows you to complete many video editing processes with a few simple settings, allowing you to produce unlimited content.
+
+
+<Callout type="info" emoji="ℹ️">
+  **Video Editing Automation** is a self-processing system that applies the settings you create on an unlimited number of videos.
+</Callout>
+
+
+## Mods
+
+VE3.Plus has 4 basic mods.
+
+
+<div className="container">
+
+            <Cards>
+              <Card image href="/hitgun">
+                        <Image src={hitgun} />
+              </Card>
+            </Cards>
+      <style jsx>{`
+        .container {
+          display:flex;
+          justify-content:center;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
+</div>
+
+
+<Cards>
+  <Card image href="/boost">
+  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image src={boost} objectFit="cover" />
+          </div>
+
+  </Card>
+  <Card image href="/multi">
+  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image src={multi} objectFit="cover" />
+          </div>
+
+  </Card>
+  <Card image href="/single">
+  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image src={single} objectFit="cover" />
+          </div>
+
+  </Card>
+
+</Cards>
+
+In addition to these modes, it also includes common features used in all modes.
+
+Common features include options such as video merging, adding images, audio, logos, cropping, zooming, etc.
+       
+<div className="container2">
+
+            <Cards>
+              <Card title="Common Features" image href="/common">
+                        <Image src={common} />
+              </Card>
+            </Cards>
+      <style jsx>{`
+        .container2 {
+          display:flex;
+          justify-content:center;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
+</div>

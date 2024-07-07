@@ -1,0 +1,242 @@
+import Image from 'next/image'
+import kaynak from 'app-images/kaynak.jpg'
+import proxy from 'app-images/proxy.jpg'
+import proxy2 from 'app-images/proxy2.jpg'
+import proxy3 from 'app-images/proxy3.jpg'
+
+# Resource
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/kaynak.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+This is the section where the content to be edited is identified.
+
+It contains three options: **Videos**, **URL**, and **URL List**.
+
+import Link from 'next/link';
+
+<Link href={`/common/resource#-tutorials`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorials
+      </button>
+    </div>
+  </div>
+</Link>
+
+
+## Videos
+
+If we want to perform editing with videos from our computer, we use this option.
+
+Videos are added to a folder, and the folder is defined in the system with this option.
+
+
+## URL
+
+URL is a feature associated with the **Hit Gun** mode, along with URL List.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  It can only be used for YouTube videos.
+</Callout>
+
+
+The link to the YouTube video we want to work with is defined in the system from this section.
+
+
+## URL List
+
+If we want to process multiple YouTube videos simultaneously, we use URL List.
+
+After adding the links one below the other in a notepad, the notepad is defined in the system.
+
+ 
+<Callout type="warning" emoji="⚠️">
+
+In Hit Gun mode, there is a sequence of operations for using resources.
+
+</Callout>
+
+
+<Callout type="warning" emoji="⚠️">
+
+If URL List is active, the system disregards other options and attempts to operate through URL List.
+
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+
+If URL List is passive, the operation proceeds based on the URL. If no link is defined in the URL, the Videos option is used.
+
+</Callout>
+
+<Link href={`/common/resource#%EF%B8%8F-url-list---factory`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Proxy
+
+<Image src={proxy} />
+
+If you want to use the URL feature with Proxy, you can enable the Proxy option.
+
+
+### Proxy List
+
+
+To use the proxy feature, a notepad containing your proxies must be defined to the system from the **Proxy List** option.
+
+
+### Proxy Static Username
+
+If you have a proxy that connects with username and password and all your proxies have the same user and password defined, you can enter your username in this field.
+
+
+### Proxy Static Password
+
+If all your proxies have the same password, you can enter it in this field.
+
+
+
+### Proxy Rules
+
+
+- Proxy type must be **Http**. Https or Socks5 proxies are not supported.
+
+- If you have many proxies with different users and passwords, you should enter them in the notepad as 
+
+`IP`:`Port`:`Username`:`Password`.
+
+If you have the same user and password, you can only enter 
+
+`IP`:`Port` in the notepad.
+
+You can enter your username and password in **Proxy Static Username** and **Proxy Static Password** fields.
+
+If you do not have any username and password, just define 
+
+`IP`:`Port`.
+
+
+- Proxies should be listed one below the other in the notepad.
+
+E.g :
+
+<Image src={proxy2} />
+
+
+- Available proxies are used in a randomized way. For each run a random proxy is selected from the list. 
+
+- It is recommended to add at least 10 http proxy types for proxy usage.
+
+<Link href={`/common/resource#%EF%B8%8F-proxy`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+### Where Can I Buy Http Proxy?
+
+You can purchase it from [Webshare.io](https://www.webshare.io/?referral_code=ez4c6cj8l39n).
+
+
+<a href="https://www.webshare.io/?referral_code=ez4c6cj8l39n" target="_blank">
+  <Image src={proxy3} width={600} height={600} />
+</a>
+
+
+
+## 📺 Tutorials
+
+
+### ▶️ URL List - Factory
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/kaynak-urllist-fabrika.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+### ▶️ URL List - Wide
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/kaynak-urllist-genis.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+### ▶️ URL List - Viral
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/kaynak-urllist-viral.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+### ▶️ Proxy
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-dakika-bolum.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

@@ -1,0 +1,182 @@
+
+import Image from 'next/image'
+import esitle from 'images/esitle.png'
+
+# Sync
+
+Allows the target video to be integrated into the vertical video produced.
+
+If checked;
+
+**Main Video Position** - **Main Video Ratio** - **Merged Area**
+
+options arise.
+
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/esitle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+import Link from 'next/link';
+
+<Link href={`/hitgun/factory/sync#-tutorials`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorials  
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Main Video Position
+
+Main video refers to the vertical video produced.
+
+The main video position has two options, **Top** and **Bottom**.
+
+By default, the Top option is selected and the main video is at the top of the produced content.
+
+When the Main Video Position is marked as Bottom, the Sync video moves to the top and the main video is at the bottom.
+
+
+## Main Video Ratio
+
+The main video ratio refers to the space that the main video occupies on the split screen.
+
+By default, this ratio is 70. 70 means 70%.
+
+The remaining 30% is occupied by the merging video.
+
+
+## Merged Area
+
+Specifies the area to be covered by the synchronised video.
+
+There are two options, **Default (100%)** and **Advanced**.
+
+
+### Default(100%)
+
+The entire target video is integrated.
+
+
+<Image src={esitle} width={425} height={600} />
+
+
+
+### Advanced
+
+If you want to integrate a part of the target video instead of the whole video, you can use the advanced option.
+
+If the **Advanced** option is selected, two ``Merged Custom Area Type`` named **Percent** and **Pixel** will appear.
+
+
+#### Merged Custom Area: Percent
+
+The working principle is the same as the structure we explained under the title [Area > Advanced > Custom Area Type: Percent](area/advanced#custom-area-type-percent).
+
+
+It allows us to select the desired area from the synchronised video with percentage ratios.
+
+
+For details [click here.](area/advanced#custom-area-type-percent)
+
+<Link href={`/hitgun/factory/area/advanced#%EF%B8%8F-custom-area-type-percent`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+#### Merged Custom Area: Pixel
+
+The working principle is the same as the structure we explained under the title [Area > Advanced > Custom Area Type: Percent](area/advanced#custom-area-type-pixel).
+
+
+It allows the area to be selected from the target video to be selected with pixels.
+
+
+For details [click here.](area/advanced#custom-area-type-pixel)
+
+<Link href={`/hitgun/factory/sync#%EF%B8%8F-merged-custom-area-pixel`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+## 📺 Tutorials
+
+### ▶️ Sync
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-alan-esitle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+### ▶️ Merged Custom Area: Percent
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-alan-esitle-gelismis-yuzde.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+### ▶️ Merged Custom Area: Pixel
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-alan-esitle-gelismis-pixel.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

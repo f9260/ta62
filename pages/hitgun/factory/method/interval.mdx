@@ -1,0 +1,177 @@
+# Interval
+
+import Image from 'next/image'
+import metotaralik from 'app-images/metot-aralık.jpg'
+import metotaralikrastgele from 'app-images/metot-aralık-rastgele.jpg'
+import metotaraliksirali from 'app-images/metot-aralık-sıralı.jpg'
+import metotaraliksiralisure from 'app-images/metot-aralık-sıralı-süre.jpg'
+
+
+The interval method allows for work to be done on entered time intervals.
+
+It has two sub-modes: **Random** and **Regular**.
+
+<Image src={metotaralik} />
+
+import Link from 'next/link';
+
+<Link href={`/hitgun/factory/method/interval#-tutorials`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorials
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Random
+When the Random mode is active, content production is carried out within the entered time intervals for the number of productions written in the "**How Many**" section.
+
+###Example
+Settings for a 40-minute YouTube video are as follows:
+
+<Image src={metotaralikrastgele} />
+
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| How Many| 3 |
+| Intervals | ```2:14-3:21```,```6:16-9:19```,```17:21-24:18```,```34:13-39:21```    |
+| Video Duration/Fixed | 15 |
+| Method | Interval/Random |
+
+
+#### Result
+
+
+| Intervals | Number of Produced Videos |
+| :----- | :----: |
+| 2:14-3:21 | 3 |
+| 6:16-9:19 | 3 |
+| 17:21-24:18 | 3 |
+| 34:13-39:21 | 3 |
+
+
+For each time interval, a total of 3 videos of 15 seconds each are randomly produced.
+
+At the end of this process, we have a total of **12 videos**.
+
+<Link href={`/hitgun/factory/method/interval#%EF%B8%8F-random`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Regular
+<Image src={metotaraliksirali} />
+
+When the Regular option is active, content production occurs for **all** entered time intervals.
+
+### Example
+
+Let's continue with a few minor changes to the example provided above.
+
+Here are the settings for a 40-minute YouTube video:
+
+<Image src={metotaraliksiralisure} />
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Intervals | ```2:14-3:21```,```6:16-9:19```,```17:21-20:18```,```34:13-36:21```    |
+| Video Duration/Fixed | 45 |
+| Method | Interval/Regular  |
+
+
+#### Result
+
+
+| Intervals | Production Periods | Number of Produced Videos |
+| :----- | :----: | :----: |
+| 2:14-3:21 | ```2:14-2:59```,```2:59-3:44``` | 2 |
+| 6:16-9:19 | ```6:16-7:01```,```7:01-7:46```,```7:46-8:31```,```8:31-9:16```,```9:16-10:01``` | 5 |
+| 17:21-20:18 | ```17:21-18:06```,```18:06-18:51```,```18:51-19:34```,```19:34-20:19``` | 4 |
+| 34:13-36:21 | ```34:13-34:58```,```34:58-35:43```,```35:43-36:28``` | 3 |
+
+
+
+As seen, different numbers of contents were created for different time intervals.
+
+Each created content is 45 seconds long.
+
+When the duration of the last content exceeds the entered time interval, content production is terminated.
+
+<Link href={`/hitgun/factory/method/interval#%EF%B8%8F-regular`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+## 📺 Tutorials
+    
+### ▶️ Random
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-aralik-rastgele.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+### ▶️ Regular
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-aralik-sirali.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

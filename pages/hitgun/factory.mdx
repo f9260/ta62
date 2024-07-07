@@ -1,0 +1,52 @@
+import Image from 'next/image'
+import videotime from 'images/videotime.png'
+import count from 'images/count.png'
+import method from 'images/method.png'
+import area from 'images/area.png'
+import sync from 'images/sync.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Factory
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/gorsel-ekle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+It contains the most important sub-features of Hit Gun mode.
+
+From the duration to the number of videos to be produced, from the production method to the design, many details are prepared here.
+
+
+  <Cards num={2}>
+
+             <Card title="Metot" image href="/hitgun/fabrika/metot">
+                        <Image src={method} /> 
+             
+              </Card>
+
+            <Card title="Alan" image href="/hitgun/fabrika/alan">
+                        <Image src={area} />
+              </Card>
+
+            </Cards>
+
+
+
+              <Cards>
+              <Card title="Video Süresi" image href="/hitgun/fabrika/video-suresi">
+                        <Image src={videotime} />
+              </Card>
+
+             <Card title="Üretim Sayısı" image href="/hitgun/fabrika/uretim-sayisi">
+                        <Image src={count} />
+              </Card>
+
+
+             <Card title="Eşitle" image href="/hitgun/fabrika/esitle">
+                        <Image src={sync} />
+              </Card>
+
+            </Cards>

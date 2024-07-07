@@ -1,0 +1,75 @@
+import Image from 'next/image'
+import metotrastgele from 'app-images/metot-rastgele.jpg'
+
+# Random
+
+The random method allows for the selection of a random duration from the target video.
+
+For example, let's assume we want to create 9 pieces of content from a 2-hour YouTube video.
+
+
+<Image src={metotrastgele} />
+
+import Link from 'next/link';
+
+<Link href={`/hitgun/factory/method/random#-tutorial`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial  
+      </button>
+    </div>
+  </div>
+</Link>
+
+### Example
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| How Many |  9   |
+| Video Duration/Fixed | 30 |
+| Method | Random  |
+
+
+After the above settings, 9 random start times are determined within the 2-hour video, and 30-second content pieces are created.
+
+
+### Result
+
+| Video | Start | End |
+| :-----: | :----: | :----: | 
+| 1 | 14:36 | 15:06 |
+| 2 | 25:13 | 25:43 |
+| 3 | 29:42 | 30:12 |
+| 4 | 43:17 | 43:47 |
+| 5 | 1:11:24 | 1:11:54 |
+| 6 | 1:32:19 | 1:32:49 |
+| 7 | 1:43:05 | 1:43:35 |
+| 8 | 1:51:44 | 1:51:14 |
+| 9 | 1:55:32 | 1:56:02 |
+
+
+9 videos are created separately in the time intervals listed in the table and saved to the designated folder in **mp4** format.
+
+
+## 📺 Tutorial
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/fabrika-rastgele.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

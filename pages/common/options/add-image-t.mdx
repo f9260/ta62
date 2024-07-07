@@ -1,0 +1,127 @@
+# Add Images(T)
+
+If you want to add transparent images, you can use this area.
+
+
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english/gorsel-transparan.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+The working logic is the same as the Add Image option. It was created to use transparent images and normal images separately.
+
+import Link from 'next/link';
+
+<Link href={`/common/options/add-image-t#-tutorials`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorials
+      </button>
+    </div>
+  </div>
+</Link>
+
+
+## Images(T)
+
+Add the transparent images you want to use in a folder in order and define the folder to the system from the Images (T) section.
+
+
+## Number of Images(T)
+
+You can add up to 5 transparent images to your content. You can customise the size and position of these images and apply transparency settings.
+
+You can set how many images you want to use in the Number of Images (T) section.
+a
+
+
+## Image Settings(T)
+
+Width, Height, X and Y coordinate settings of the added images are made here.
+
+According to the number of images you add, you can create the settings of each image with the expression ‘ **::** ’.
+
+#### Example
+
+Suppose we want to add 4 images to our work.
+
+We put 4 images in a folder and defined them to the system.
+
+Then we set the Number of Images as 4.
+
+We need to enter the resolutions of our images and the position information if we want them to be placed in which positions.
+
+Let's create sample resolutions and positions.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  Process order: Width, Height, X, Y should be created.
+</Callout>
+
+`250,420,50,290`::`400,120,140,80`::`110,270,35,65`::`350,200,45,90`
+
+
+As a result of these settings, 4 images will be integrated into the content in the resolutions and positions we desire.
+
+
+## Opacity Settings(T)
+
+You can use this option to adjust the transparency of your images.
+
+A value between 1 and 9 can be given.
+
+As you get closer to 9, the image becomes more prominent. Transparency increases as you move away from this value.
+
+In cases where more than one image is used, a separate value can be entered for each image using the `::` parameter.
+
+### Example
+
+You have used three images and you want to set transparency for all three.
+
+In this case, if **5** value is written in the Opacity Settings section, this value is applied for **all images**.
+
+However, if you want to define separate values for each image, you can define separate values for each image as **5**::**2**::**7**.
+
+
+## Time Range
+
+This feature can be used to create images that you want to stay on the screen for a certain period of time and then disappear.
+
+For example, when **5-15** is written in the Time Range section, the relevant image appears at the 5th second of the video and disappears after remaining on the screen until the 15th second.
+
+
+## 📺 Tutorials
+    
+### ▶️ Add Images(T)
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/secenekler-transparan.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+### ▶️ Time Range
+  
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/sure-araligi.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

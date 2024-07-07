@@ -1,0 +1,55 @@
+import Image from 'next/image'
+import kaynak from 'images/resource.png'
+import secenekler from 'images/options.png'
+import ozeltasarim from 'images/customdesign.png'
+import ayarlar from 'images/settings.png'
+import test from 'images/test.png'
+import kayit from 'images/save.png'
+import telegram1 from 'images/telegram.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Common Features
+
+The VE3.Plus system has some common features for all modes.
+
+You can freely edit your videos using these common features.
+
+<Cards num={2}>
+
+              <Card title="Resource" image href="/common/resource">
+                        <Image src={kaynak} />
+              </Card>
+              <Card title="Options" image href="/common/options">
+                        <Image src={secenekler} />
+              </Card>
+
+            </Cards>
+
+   <Cards num={2}>
+
+              <Card title="Custom Design" image href="/common/custom">
+                        <Image src={ozeltasarim} />
+              </Card>
+              <Card title="General Settings" image href="/common/general-settings">
+                        <Image src={ayarlar} />
+              </Card>
+
+            </Cards>
+           
+
+
+            
+  <Cards >
+
+              <Card title="Test" image href="/common/test">
+                        <Image src={test} />
+              </Card>
+              <Card title="Output" image href="/common/output">
+                        <Image src={kayit} />
+              </Card>
+              <Card title="Notification" image href="/common/notification">
+                        <Image src={telegram1} />
+              </Card>
+
+
+            </Cards>

@@ -1,0 +1,218 @@
+import Image from 'next/image'
+import ozelsesekle from 'app-images/ozelsesekle.jpg'
+import ozelsesweb from 'app-images/ozelsesweb.jpg'
+import ozelsesweb2 from 'app-images/ozelsesweb2.jpg'
+import ozelsesweb3 from 'app-images/ozelsesweb3.jpg'
+import ozelsesweb4 from 'app-images/ozelsesweb4.jpg'
+import ozelsesweb5 from 'app-images/ozelsesweb5.jpg'
+import ozelsesvideo from 'app-images/ozelsesvideo.jpg'
+import ozelsesvideo2 from 'app-images/ozelsesvideo2.jpg'
+import { Card, Cards } from 'nextra-theme-docs'
+import { Steps } from 'nextra/components'
+import Link from 'next/link'
+
+# Add Custom Sound
+
+
+There are three separate options in the Add Custom Sound section.
+
+- No
+- Web
+- Video
+
+<Image src={ozelsesekle} />
+
+
+No option means the function is kept passive.
+
+
+<Link href={`/hitgun/viral/custom-sound#-tutorials`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorials
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Web
+
+Thanks to the web feature, you can play the audio from any duration of any video on **Youtube**, 
+You can quickly produce content by integrating it into the system in seconds.
+
+
+<Image src={ozelsesweb} />
+
+
+Simply define the sounds you want to add in a notepad as in the example above.
+
+
+***Things to pay attention***
+
+
+<Steps>
+### list.txt Sort
+
+Firstly, determine the order of your content in **list.txt**. For example, if you have created 10 audio files, start the order of your web file from 11.
+ 
+
+For details about **list.txt** <Link href="/hitgun/viral/sounds">**Click here**.</Link>
+
+
+ 
+### Determining Durations
+ 
+Once you have created the order of your content, determine the duration of your scenes by adding a " | " sign.
+
+For example, you will use 15 seconds of audio and you want to create 6 different scenes in it.
+
+In this case, you can determine your scene durations as ``4.1``,``2.6``,``1.3``,``2.8``,``1.7``,``2.5``.
+
+<Image src={ozelsesweb2} />
+
+### Determining URL Duration
+
+In the next step, you need to determine at what time of the video the sound you want to use is located by adding a "|" sign after the scene durations.
+
+Let's say you want to work on a sound that appears at the 25th minute and 34th second of a 40-minute video and continues for 15 seconds.
+
+In this case, you need to carry out a process as in the image.
+
+<Image src={ozelsesweb3} />
+
+### Add URL
+
+At the last stage, all you need to do is add the YouTube URL you want to work on.
+
+<Image src={ozelsesweb4} />
+
+
+### Define Sound
+
+The number of queues you initially created for your sound file should be defined in the <Link href="/hitgun/viral/sounds">**Sounds**</Link> field. 
+In this way, it is possible to use the sounds both on your computer and on the Web at the same time.
+
+<Image src={ozelsesweb5} />
+
+
+</Steps>
+
+The created sounds are **automatically saved to your sounds file**.
+
+You can use these sounds again and again in your subsequent works.
+
+It will be helpful to review the order of your audio files before each new run to avoid confusion and problems.
+
+<Link href={`/hitgun/viral/custom-sound#%EF%B8%8F-web`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Video
+
+When the Video option is activated, content production is realised through the videos defined in the Video Folder.
+
+<Image src={ozelsesvideo2} />
+
+The system processes the video you upload and creates new content on the subject you desire with the same audio and video transitions.
+
+You do not need to enter any values in the Sounds section, only the videos you add will be processed.
+
+For example,
+
+You are interested in a video with many video scenes created with a voice on Instagram Reels.
+
+You wanted to use a content structure with the same sound and transitions in the sector/category you desire.
+
+You only need to download the video to your computer and define it to the system, configure your duration settings and determine which source you want to produce content from.
+
+
+<Link href={`/hitgun/viral/custom-sound#%EF%B8%8F-video`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Jump to Tutorial
+      </button>
+    </div>
+  </div>
+</Link>
+
+### Video Settings
+
+<Image src={ozelsesvideo} />
+
+
+When you want to produce viral content with the video identification system, you can determine the sensitivity of the content analysis from this area.
+
+
+The default value is 20.
+
+If you think content is being created that does not match the transition times of the video you have defined 
+Entering values below 20 here will provide better results.
+
+
+
+## 📺 Tutorials
+
+### ▶️ Web
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/viral-ozelses-web.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+### ▶️ Video
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/viral-ozelses-video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

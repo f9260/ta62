@@ -1,0 +1,45 @@
+import Image from 'next/image'
+import ses1 from 'app-images/ses1.jpg'
+import seslist from 'app-images/seslist.jpg'
+import seslist2 from 'app-images/seslist2.jpg'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Sounds
+
+Sounds is the area where the sounds desired to be used in viral content are defined.
+
+If the Add Custom Sound option is not selected as ‘Video’, all sounds to be used are determined here.
+
+
+In the example, it was decided to use the 1st, 3rd and 4th sounds.
+
+
+<Image src={ses1} />
+
+The order of the sounds to be used is determined by the **list.txt** file in the **viral** folder in the VE3.Plus system.
+
+
+<Image src={seslist} />
+
+Audio details are organised in the **list.txt** file.
+
+Each sound starts with a number to create an orderly sequence.
+
+The settings are separated from each other by a ‘ | ’ sign.
+
+<Image src={seslist2} />
+
+If you want to make special definitions and names for the sounds, the sound file can be named by adding the ‘ - ’ sign after the number.
+
+Then, by adding the ‘ | ’ sign, the sound settings are entered.
+
+Each sound setting entered determines the duration of that scene.
+
+
+## 📺 Tutorial
+
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-english-tutorials/viral-sesler.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
